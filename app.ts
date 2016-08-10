@@ -5,10 +5,15 @@ import { Component } from "@angular/core";
 selector: 'hello-world',
 template: `
 <div>
-Hello world
+Hello {{name}}
 </div>
 `
 })
 class HelloWorld {
+name:string;
+constructor(){
+	this.name ='Wanjila'
+}
+
 }
 bootstrap(HelloWorld);
